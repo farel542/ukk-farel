@@ -1,0 +1,276 @@
+/* Reset */ 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(0, 119, 255);
+    padding: 20px;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-left: 145px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+nav ul {
+  list-style: none;
+    display: flex;
+     gap: 20px;
+}
+
+nav ul li {
+    margin-left: 2px;
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+   text-decoration: none;
+    color: white;
+}
+
+.btn-order {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 170px;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: rgb(0, 26, 172);
+  color: white;
+
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 700px;
+    max-height: 500px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.btn-primary {
+  background-color: rgb(2, 6, 255);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 450px;
+  font-size: 2.0rem;
+  margin-left: 180px;
+
+}
+
+/* Product Section */
+#products h2 {
+    padding: 40px 0 0 40px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    font-size: 1.0rem;
+    margin-right: 100px;
+}
+
+.products {
+    align-items: center;
+    max-width: 90px;
+    margin: 90px;
+    
+}
+
+.product img {
+    width: 90%;
+    height: auto;
+    border-radius: 90px;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+    background-color: #00b7ff;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 50px;
+    max-width: 60px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+form input,
+textarea {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(0, 60, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    text-align: center;
+    font-style: bold;
+}
+
+/* Footer */
+ footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+ }
+
+ footer p {
+    margin: 10px 0;
+ }
+
+ .social-icons {
+    margin-bottom: 10px;
+ }
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+ /* Media Queries for Responsiveness */
+ @media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+ }
+
+ nav {
+    flex-direction: column;
+ }
+
+ .btn-order {
+    margin-top: 1opx;
+ }
+
+ #hero {
+    flex-direction: none;
+    text-align: center;
+ }
+
+ .hero-content h1 {
+    font-size: 2.5rem;
+ }
+
+ .btn-primary {
+    margin-bottom: 10px;
+}
+
+#products h2 {
+  text-align: center;
+}
+
+.product-list {
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonials {
+    flex-direction: column;
+}
+
+.testimonial {
+    margin: none;
+}
+
+form input,
+form textarea {
+    width: 90%;
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+}
+
+.product {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.testimonial {
+    width: 10%;
+}
